@@ -1,0 +1,61 @@
+{
+    "name": "salamzadeh/pb-helper",
+    "description": "Laravel helper package for Iranians",
+    "keywords": [
+        "laravel",
+        "pbdp",
+        "salamzadeh",
+        "helpers"
+    ],
+    "homepage": "https://github.com/salamzadeh/pb-helper",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Sasan Salamzadeh",
+            "email": "sasan.salamzadeh@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.3|^8.0",
+        "hekmatinasser/verta": "^8.3",
+        "shetabit/payment": "^5.4.0",
+        "illuminate/support": "^8.0|^9.0",
+        "cviebrock/eloquent-sluggable": "^8.0|^9.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^5.1 | ^6",
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "PBHelper\\": "src"
+        },
+        "classmap": [
+            "database/seeds"
+        ],
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "PBHelper\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "\"vendor/bin/phpunit\"",
+        "test-coverage": "\"vendor/bin/phpunit\" --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "PBHelper\\PBHelperServiceProvider"
+            ]
+        }
+    }
+}

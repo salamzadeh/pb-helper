@@ -1,0 +1,10 @@
+/.vscode
+/.idea
+build
+composer.lock
+docs
+vendor
+coverage
+.phpunit.result.cache
+coverage.clover
+.php_cs.cache
